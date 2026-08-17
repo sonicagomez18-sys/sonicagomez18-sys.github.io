@@ -3,416 +3,463 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Sonica Jose Gomez | Portfolio</title>
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            scroll-behavior: smooth;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            background: #f5f7fb;
-            color: #172033;
-            line-height: 1.6;
-        }
-
-        header {
-            background: #0b1328;
-            color: white;
-            padding: 45px 20px 30px;
-            text-align: center;
-        }
-
-        header h1 {
-            font-size: 36px;
-            margin-bottom: 10px;
-        }
-
-        header p {
-            font-size: 17px;
-            color: #d7dbea;
-            max-width: 850px;
-            margin: auto;
-        }
-
-        .buttons {
-            margin-top: 22px;
-        }
-
-        .buttons a {
-            display: inline-block;
-            text-decoration: none;
-            color: white;
-            background: #2563eb;
-            padding: 10px 18px;
-            border-radius: 7px;
-            margin: 5px;
-            font-weight: bold;
-        }
-
-        .buttons a.secondary {
-            background: #202b45;
-        }
-
-        nav {
-            background: #080e1d;
-            padding: 14px;
-            text-align: center;
-            position: sticky;
-            top: 0;
-            z-index: 10;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 18px;
-            font-weight: bold;
-        }
-
-        section {
-            max-width: 1100px;
-            margin: 45px auto;
-            padding: 0 20px;
-        }
-
-        h2 {
-            border-left: 5px solid #2563eb;
-            padding-left: 12px;
-            margin-bottom: 25px;
-            font-size: 25px;
-        }
-
-        .about {
-            background: white;
-            padding: 25px;
-            border-radius: 12px;
-            box-shadow: 0 3px 15px rgba(0,0,0,0.06);
-        }
-
-        .skills {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-            gap: 18px;
-        }
-
-        .skill-card {
-            background: white;
-            padding: 22px;
-            border-radius: 10px;
-            box-shadow: 0 3px 12px rgba(0,0,0,0.06);
-        }
-
-        .skill-card h3 {
-            margin-bottom: 10px;
-            color: #172033;
-        }
-
-        .projects {
-            display: grid;
-            gap: 22px;
-        }
-
-        .project {
-            background: white;
-            padding: 25px;
-            border-left: 5px solid #2563eb;
-            border-radius: 10px;
-            box-shadow: 0 3px 15px rgba(0,0,0,0.07);
-        }
-
-        .project h3 {
-            margin-bottom: 10px;
-            font-size: 21px;
-        }
-
-        .project p {
-            margin-bottom: 10px;
-        }
-
-        .project ul {
-            margin: 10px 0 15px 20px;
-        }
-
-        .project a {
-            display: inline-block;
-            text-decoration: none;
-            background: #172033;
-            color: white;
-            padding: 8px 14px;
-            border-radius: 6px;
-            margin-right: 7px;
-            font-size: 14px;
-        }
-
-        .education {
-            background: white;
-            padding: 25px;
-            border-radius: 10px;
-            box-shadow: 0 3px 15px rgba(0,0,0,0.06);
-        }
-
-        footer {
-            background: #0b1328;
-            color: white;
-            text-align: center;
-            padding: 30px 20px;
-            margin-top: 60px;
-        }
-
-        footer a {
-            color: #8db5ff;
-            text-decoration: none;
-        }
-
-        @media (max-width: 600px) {
-            header h1 {
-                font-size: 28px;
-            }
-
-            nav a {
-                margin: 0 7px;
-                font-size: 14px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
-    <h1>Sonica Jose Gomez</h1>
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
 
-    <p>
-        B.Tech ECE Graduate | Machine Learning | Data Analytics |
-        Embedded Systems | Biomedical Technology
-    </p>
+            <div class="logo">
+                Sonica.
+            </div>
 
-    <div class="buttons">
-        <a href="#projects">Projects</a>
-        <a href="YOUR_GITHUB_LINK" class="secondary">GitHub</a>
-        <a href="YOUR_LINKEDIN_LINK" class="secondary">LinkedIn</a>
-    </div>
-</header>
-
-<nav>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#education">Education</a>
-</nav>
-
-<section id="about">
-    <h2>About Me</h2>
-
-    <div class="about">
-        <p>
-            I am a B.Tech graduate in Electronics & Communication Engineering
-            with a Minor in Machine Learning. My technical experience spans
-            Machine Learning, Data Analysis, Python, SQL, C programming,
-            Embedded Systems, Electronics, and Biomedical Technology.
-        </p>
-
-        <br>
-
-        <p>
-            I have worked on machine learning and data-driven applications,
-            embedded and hardware-based projects, signal processing,
-            electronic circuits, and biomedical applications.
-        </p>
-
-        <br>
-
-        <p>
-            My academic and practical experience includes low-pass and
-            band-pass filter design, signal processing, embedded systems,
-            sensor-based applications, and machine learning model development
-            and deployment.
-        </p>
-    </div>
-</section>
-
-<section id="skills">
-    <h2>Core Skills</h2>
-
-    <div class="skills">
-
-        <div class="skill-card">
-            <h3>Programming</h3>
-            <p>Python • SQL • C • Java</p>
-        </div>
-
-        <div class="skill-card">
-            <h3>Machine Learning & Data</h3>
-            <p>
-                Scikit-learn • Pandas • NumPy • Classification •
-                Feature Engineering • Data Analysis
-            </p>
-        </div>
-
-        <div class="skill-card">
-            <h3>Development & Tools</h3>
-            <p>
-                Streamlit • Power BI • Git • GitHub
-            </p>
-        </div>
-
-        <div class="skill-card">
-            <h3>Electronics & Embedded</h3>
-            <p>
-                Embedded Systems • Signal Processing • Circuit Design •
-                Sensors • Electronics
-            </p>
-        </div>
-
-        <div class="skill-card">
-            <h3>Biomedical</h3>
-            <p>
-                Biomedical Electronics • Biomedical Systems •
-                Biomedical Instrumentation
-            </p>
-        </div>
-
-    </div>
-</section>
-
-<section id="projects">
-    <h2>Selected Technical Projects</h2>
-
-    <div class="projects">
-
-        <div class="project">
-            <h3>CreditWise — ML-Powered Loan Approval System</h3>
-
-            <p>
-                <strong>Problem:</strong>
-                Predict whether a loan application is likely to be
-                approved or not based on applicant information.
-            </p>
-
-            <p>
-                <strong>Solution:</strong>
-                Developed an end-to-end machine learning classification
-                system with model comparison and Streamlit deployment.
-            </p>
-
-            <ul>
-                <li>Data preprocessing and feature engineering</li>
-                <li>Logistic Regression, KNN and Naive Bayes</li>
-                <li>Precision, Recall and F1-score evaluation</li>
-                <li>Naive Bayes selected as the final model</li>
-                <li>Streamlit deployment</li>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
 
-            <a href="https://credit-wise2.streamlit.app/" target="_blank">
-                Live App
+        </nav>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <p class="small-heading">
+                B.Tech ECE Graduate · Machine Learning
+            </p>
+
+            <h1>
+                Hi, I'm <span>Sonica Jose Gomez</span>
+            </h1>
+
+            <h2>
+                Building intelligent solutions with
+                Machine Learning, Data & Engineering.
+            </h2>
+
+            <p class="hero-description">
+                I am an Electronics & Communication Engineering graduate
+                with a minor in Machine Learning, passionate about building
+                practical AI and software applications.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#projects" class="btn primary-btn">
+                    View My Projects
+                </a>
+
+                <a href="#contact" class="btn secondary-btn">
+                    Contact Me
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- About Section -->
+    <section id="about" class="section">
+
+        <div class="section-title">
+            <p>ABOUT ME</p>
+            <h2>Who I Am</h2>
+        </div>
+
+        <div class="about-content">
+
+            <p>
+                I am a B.Tech graduate in Electronics & Communication
+                Engineering with a Minor in Machine Learning. My interests
+                lie at the intersection of software, artificial intelligence,
+                data and engineering.
+            </p>
+
+            <p>
+                Through my projects, I have worked with machine learning,
+                natural language processing, computer vision, signal
+                processing and application development. I enjoy turning
+                real-world problems into practical, usable solutions.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+
+        <div class="section-title">
+            <p>TECHNICAL SKILLS</p>
+            <h2>What I Work With</h2>
+        </div>
+
+        <div class="skills-grid">
+
+            <div class="skill-card">
+                <h3>Programming</h3>
+                <p>Python · SQL · Java · C · MATLAB</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>Machine Learning</h3>
+                <p>
+                    Scikit-learn · Logistic Regression · KNN ·
+                    Naive Bayes · Feature Engineering
+                </p>
+            </div>
+
+            <div class="skill-card">
+                <h3>NLP & AI</h3>
+                <p>
+                    SBERT · Semantic Similarity · Text Classification ·
+                    Hugging Face
+                </p>
+            </div>
+
+            <div class="skill-card">
+                <h3>Computer Vision</h3>
+                <p>
+                    OpenCV · MediaPipe · Real-time Image Processing
+                </p>
+            </div>
+
+            <div class="skill-card">
+                <h3>Development</h3>
+                <p>
+                    Streamlit · Pandas · NumPy · Git · GitHub
+                </p>
+            </div>
+
+            <div class="skill-card">
+                <h3>Data & Analytics</h3>
+                <p>
+                    Power BI · Data Cleaning · EDA · Model Evaluation
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+
+        <div class="section-title">
+            <p>MY WORK</p>
+            <h2>Featured Projects</h2>
+        </div>
+
+
+        <div class="projects-grid">
+
+
+            <!-- Project 1 -->
+            <article class="project-card">
+
+                <div class="project-number">
+                    01
+                </div>
+
+                <h3>
+                    SkillSync AI
+                </h3>
+
+                <p>
+                    An AI-powered resume and job matching application
+                    using SBERT embeddings and semantic similarity to
+                    compare resumes with job descriptions and identify
+                    relevant skills.
+                </p>
+
+                <div class="project-tags">
+                    <span>SBERT</span>
+                    <span>NLP</span>
+                    <span>Python</span>
+                    <span>Streamlit</span>
+                </div>
+
+                <div class="project-links">
+
+                    <a
+                        href="https://skillsync-ai.streamlit.app/"
+                        target="_blank">
+                        Live Demo →
+                    </a>
+
+                    <a
+                        href="https://github.com/sonicagomez18-sys/SkillSync"
+                        target="_blank">
+                        GitHub →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- Project 2 -->
+            <article class="project-card">
+
+                <div class="project-number">
+                    02
+                </div>
+
+                <h3>
+                    Advanced Eye Gaze Typing System
+                </h3>
+
+                <p>
+                    An EOG-based eye gaze typing system that converts
+                    eye movements into text, combining electronics,
+                    signal processing and intelligent human-computer
+                    interaction.
+                </p>
+
+                <div class="project-tags">
+                    <span>EOG</span>
+                    <span>Python</span>
+                    <span>Signal Processing</span>
+                    <span>HCI</span>
+                </div>
+
+                <div class="project-links">
+
+                    <!-- Add your GitHub/demo link here later -->
+                    <a href="#">
+                        Project →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- Project 3 -->
+            <article class="project-card">
+
+                <div class="project-number">
+                    03
+                </div>
+
+                <h3>
+                    CreditWise
+                </h3>
+
+                <p>
+                    A machine-learning loan approval system that
+                    compares classification models and predicts
+                    loan approval outcomes using applicant financial
+                    information.
+                </p>
+
+                <div class="project-tags">
+                    <span>Python</span>
+                    <span>Scikit-learn</span>
+                    <span>Naive Bayes</span>
+                    <span>Streamlit</span>
+                </div>
+
+                <div class="project-links">
+
+                    <a
+                        href="https://credit-wise2.streamlit.app/"
+                        target="_blank">
+                        Live Demo →
+                    </a>
+
+                    <a
+                        href="https://github.com/sonicagomez18-sys/CreditWise"
+                        target="_blank">
+                        GitHub →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- Project 4 -->
+            <article class="project-card">
+
+                <div class="project-number">
+                    04
+                </div>
+
+                <h3>
+                    Hand Gesture Translator
+                </h3>
+
+                <p>
+                    A computer vision application that detects and
+                    interprets hand gestures in real time, converting
+                    visual hand movements into meaningful output.
+                </p>
+
+                <div class="project-tags">
+                    <span>OpenCV</span>
+                    <span>MediaPipe</span>
+                    <span>Python</span>
+                    <span>Computer Vision</span>
+                </div>
+
+                <div class="project-links">
+
+                    <!-- Add your GitHub/demo link here later -->
+                    <a href="#">
+                        Project →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- Project 5 -->
+            <article class="project-card">
+
+                <div class="project-number">
+                    05
+                </div>
+
+                <h3>
+                    Sentiment Insights
+                </h3>
+
+                <p>
+                    A sentiment analysis application trained using
+                    Logistic Regression on the IMDB dataset, with
+                    support for both individual text and bulk CSV
+                    sentiment analysis.
+                </p>
+
+                <div class="project-tags">
+                    <span>Logistic Regression</span>
+                    <span>NLP</span>
+                    <span>IMDB</span>
+                    <span>Streamlit</span>
+                </div>
+
+                <div class="project-links">
+
+                    <a
+                        href="https://sentiment-insights-ztvjmookwraqrrfmbhcgpj.streamlit.app/"
+                        target="_blank">
+                        Live Demo →
+                    </a>
+
+                    <a
+                        href="https://github.com/sonicagomez18-sys/sentiment-insights"
+                        target="_blank">
+                        GitHub →
+                    </a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+
+        <div class="section-title">
+            <p>EDUCATION</p>
+            <h2>My Academic Background</h2>
+        </div>
+
+        <div class="education-card">
+
+            <h3>
+                B.Tech — Electronics & Communication Engineering
+            </h3>
+
+            <p>
+                Sree Chithra Thirunal College of Engineering
+            </p>
+
+            <p>
+                2022 – 2026
+            </p>
+
+            <p>
+                Minor in Machine Learning
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+
+        <div class="section-title">
+            <p>CONTACT</p>
+            <h2>Let's Connect</h2>
+        </div>
+
+        <p>
+            I'm open to opportunities, collaborations and interesting
+            projects in technology, machine learning and software.
+        </p>
+
+        <a
+            class="email"
+            href="mailto:sonicagomez18@gmail.com">
+            sonicagomez18@gmail.com
+        </a>
+
+        <div class="social-links">
+
+            <a
+                href="https://github.com/sonicagomez18-sys"
+                target="_blank">
+                GitHub
             </a>
 
-            <a href="YOUR_CREDITWISE_GITHUB_LINK" target="_blank">
-                Source Code
+            <a
+                href="https://www.linkedin.com/"
+                target="_blank">
+                LinkedIn
             </a>
+
         </div>
 
-
-        <div class="project">
-            <h3>Advanced Eye Gaze Typing System</h3>
-
-            <p>
-                Developed an eye-gaze based typing system using
-                EOG signals and intelligent processing techniques
-                to enable hands-free text input.
-            </p>
-
-            <ul>
-                <li>EOG signal processing</li>
-                <li>Eye movement detection</li>
-                <li>Python-based application development</li>
-            </ul>
-        </div>
+    </section>
 
 
-        <div class="project">
-            <h3>SkillSync — Semantic Skill Matching System</h3>
+    <!-- Footer -->
+    <footer>
 
-            <p>
-                Developed a semantic matching application using
-                sentence embeddings to compare skills and identify
-                relevant matches.
-            </p>
-
-            <ul>
-                <li>SBERT embeddings</li>
-                <li>Semantic similarity</li>
-                <li>Python</li>
-                <li>Streamlit</li>
-            </ul>
-        </div>
-
-
-        <div class="project">
-            <h3>Sentiment Insights</h3>
-
-            <p>
-                Machine learning application for analyzing and
-                classifying sentiment from textual data.
-            </p>
-
-            <ul>
-                <li>Text preprocessing</li>
-                <li>Machine learning classification</li>
-                <li>Streamlit application</li>
-            </ul>
-        </div>
-
-
-        <div class="project">
-            <h3>Electronics & Embedded Systems Projects</h3>
-
-            <p>
-                Practical academic projects involving electronic
-                circuits, signal processing, embedded systems,
-                sensors, and hardware implementation.
-            </p>
-
-            <ul>
-                <li>Low-pass filter design</li>
-                <li>Band-pass filter design</li>
-                <li>Signal processing</li>
-                <li>Embedded systems</li>
-                <li>Sensor-based applications</li>
-            </ul>
-        </div>
-
-    </div>
-</section>
-
-<section id="education">
-    <h2>Education</h2>
-
-    <div class="education">
-        <h3>B.Tech — Electronics & Communication Engineering</h3>
         <p>
-            Sree Chitra Thirunal College of Engineering
+            © 2026 Sonica Jose Gomez. All rights reserved.
         </p>
-        <p>
-            Minor in Machine Learning
-        </p>
-    </div>
-</section>
 
-<footer>
-    <p>© 2026 Sonica Jose Gomez</p>
+    </footer>
 
-    <p>
-        <a href="YOUR_LINKEDIN_LINK">LinkedIn</a>
-        &nbsp; • &nbsp;
-        <a href="YOUR_GITHUB_LINK">GitHub</a>
-    </p>
-</footer>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
