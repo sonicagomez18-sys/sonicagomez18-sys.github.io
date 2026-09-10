@@ -634,7 +634,11 @@ footer {
     }
 
 }
-/* Scroll reveal animation */
+
+
+/* ================================
+   SCROLL REVEAL
+================================ */
 
 .reveal {
     opacity: 0;
@@ -646,3 +650,8 @@ footer {
     opacity: 1;
     transform: translateY(0);
 }
+   
+   
+   
+
+
