@@ -1,6 +1,6 @@
-// Smooth scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(link => {
     link.addEventListener("click", function (event) {
+
         const targetId = this.getAttribute("href");
 
         if (targetId === "#") return;
@@ -27,8 +27,11 @@ const revealElements = document.querySelectorAll(
 const observer = new IntersectionObserver(
     (entries) => {
         entries.forEach(entry => {
+
             if (entry.isIntersecting) {
+
                 entry.target.classList.add("visible");
+
                 observer.unobserve(entry.target);
             }
         });
@@ -39,7 +42,9 @@ const observer = new IntersectionObserver(
 );
 
 revealElements.forEach(element => {
+
     element.classList.add("reveal");
+
     observer.observe(element);
 });
 
@@ -48,6 +53,7 @@ revealElements.forEach(element => {
 const footerText = document.querySelector("footer p");
 
 if (footerText) {
+
     footerText.textContent =
-        `© ${new Date().getFullYear()} Sonica Jose Gomez. All rights reserved.`;
+        `©️ ${new Date().getFullYear()} Sonica Jose Gomez. All rights reserved.`;
 }
